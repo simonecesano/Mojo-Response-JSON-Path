@@ -1,8 +1,4 @@
 use strict;
 use Test::More tests => 1;
 
-BEGIN {
-    use_ok $_ for qw/
-    	   Mojo::Response::JSON::Path
-    /;
-}
+use_ok $_ for qw/Mojo::Response::JSON::Path/;
