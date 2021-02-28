@@ -1,12 +1,12 @@
-package Mojo::JSON::Path;
+package Mojo::Response::JSON::Path;
+
+# ABSTRACT: use JSON::Path for searching JSON responses
 
 use Class::Method::Modifiers qw/install_modifier/;
 use Mojo::Message;
 use JSON::Path;
 
 sub import {
-    print 'import: ' . join '; ', @_;
-
     my $class = shift;
 
     install_modifier "Mojo::Message", 'around', 'json',
@@ -16,7 +16,7 @@ sub import {
 
 	    if (@_) {
 		return JSON::Path->new($_[0])->value($orig->($self));
-	    } else { 
+	    } else {
 		return $orig->($self);
 	    }
 	};
