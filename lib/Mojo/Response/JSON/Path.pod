@@ -1,9 +1,9 @@
 
-=head1 Mojo::JSON::Path - use JSON::Path for searching JSON responses
+=head1 Mojo::Response::JSON::Path - use JSON::Path for searching JSON responses
 
 =head2 SYNOPSIS
 
-    use Mojo::JSON::Path;
+    use Mojo::Response::JSON::Path;
     use Mojo::UserAgent;
 
     my $ua = Mojo::UserAgent->new;
@@ -19,7 +19,6 @@
 
 This module allows the use of an optional JSON Path expression to extract a specific value from a Mojo::Message via JSON::Path. 
 
-
 =head2 FUNCTIONS
 
 None
@@ -31,7 +30,6 @@ Related modules: L<Mojo::Message>, L<Mojo::JSON::Pointer>, L<JSON::Path>
 =head2 AUTHORS
 
 Simone Cesano 
-
 
 =head2 COPYRIGHT AND LICENSE
 
