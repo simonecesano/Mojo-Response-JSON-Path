@@ -1,8 +1,12 @@
-# Mojo::JSON::Path - use JSON::Path for searching JSON responses
+# Mojo::Response::JSON::Path
+
+## NAME
+
+Mojo::Response::JSON::Path - use JSON::Path for searching JSON responses
 
 ## SYNOPSIS
 
-    use Mojo::JSON::Path;
+    use Mojo::Response::JSON::Path;
     use Mojo::UserAgent;
     
     my $ua = Mojo::UserAgent->new;
